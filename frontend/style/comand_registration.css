@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kanit;
+    list-style: none;
+}
+body {
+    background: linear-gradient(to bottom, #726F88 20%, #CCCCE7 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #7d7a97;
+    box-shadow: 0 1px 1px #434150;
+    padding: 24px 0;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-text h1 {
+    margin: 0 0 12px 0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #434150;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 24px;
+    color: #255C00;
+}
+
+.header-media-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.podium-logo {
+    width: 140px;
+    height: 140px;
+    display: block;
+
+}
+
+.my-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin: 16px 20px;
+    border: 1px solid #434150;
+    border-radius: 10px;
+}
+
+.registration-section-row{
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.item-row-big {
+    grid-column: span 2;
+}
+
+
+.my-grid h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+.my-grid .cell-bottom {
+    align-content: end;
+}
+
+.my-grid span {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.my-grid input{
+    border-radius: 10px;
+    background-color: #726F88;
+    color: #CCCCE7;
+    height: 60px;
+    font-size: 20px;
+}
+.my-grid input::placeholder {
+    color: #CCCCE7;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.my-grid .send-request{
+    background-color: #00B23B;
+    border: none;
+    color: #A8FFAF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.send-request:hover{
+    background-color: #04AA6D;
+    color: #CCCCE7;
+}
+
+.my-grid .send{
+    display: flex;
+    justify-content: center;
+}
+
+
+.registration-open{
+    background-color: #5FED3887;
+    color: #CCCCE7;
+    font-size: 22px;
+    margin: 16px 14px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.chekmark{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 15px;
+}
+
+.open-text{
+    padding: 10px;
+}
+
+.registration-section-header{
+    background: #726F88;
+    color: #CCCCE7;
+    padding: 16px;
+}
