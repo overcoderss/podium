@@ -364,6 +364,10 @@ h3{
     border-radius: 11px;
     margin: 40px 0 40px 35px;
 }
+.last-btn:hover{
+    border: 3px solid #434150;
+    box-shadow: 1px 1px 3px #4a4741;
+}
 .turnir-btn:hover{
     border: 3px solid #434150;
     color: #434150;
