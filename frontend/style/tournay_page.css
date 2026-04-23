@@ -1,0 +1,273 @@
+*{
+    margin: 5px;
+    /*padding: 0;*/
+    box-sizing: border-box;
+    font-family: Kanit;
+    list-style: none;
+    font-size: 24px;
+}
+
+
+body{
+    background-color: #cccce6;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #434050;
+}
+.img-logo{
+    margin-right: 10px;
+}
+.img-text{
+    margin-top: -30px;
+}
+
+/*.line{*/
+/*    border-bottom: 1px solid #434050;*/
+/*    width: 100%;*/
+/*    margin: -35px auto;*/
+/*}*/
+li{
+    display: inline;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -7px;
+    margin-block-end: 25px;
+}
+.nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:  #434050;
+    align-items: flex-start;
+    margin: -40px 20px 0 10px;
+
+    /*padding: -10px 0 0 10px;*/
+    font-weight: bold;
+}
+.nav a:hover{
+    color: #6b46c1;
+    outline: none;
+}
+.nav img{
+    margin: 0 30px -15px -10px;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: #434150;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.tournament-section {
+    margin: 24px 0;
+}
+
+.tournament-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.timeline-card,
+.action-card {
+    /*margin: 10px;*/
+    background: #f5f3fb;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-card h2 {
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.step .icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.step .title {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.step .date {
+    font-size: 13px;
+    color: #555;
+}
+
+/*.line {*/
+/*    height: 3px;*/
+
+/*    background: #434150;*/
+/*}*/
+
+.primary-btn {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #6b46c1;
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.primary-btn:hover{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #6b46c1;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.deadline {
+    margin: 14px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #d62828;
+    font-weight: 700;
+}
+
+.secondary-btn span {
+    background: #d62828;
+    color: white;
+    font-size: 24px;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+h1{
+    color: #434150;
+    font-weight: bold;
+    font-size: 64px;
+    padding: 5px;
+}
+
+h2{
+    color: #434150;
+    font-size: 32px;
+    padding: 5px;
+}
+h1:hover{
+    color:#6b46c1;
+}
+
+h2:hover{
+    color:#6b46c1;
+}
+
+.tournament-stories{
+    display: flex;
+    flex-direction: row;
+    margin: 16px 10px;
+    padding: 5px;
+}
+
+.tournament-story-1{
+
+    margin: 16px 10px;
+    padding: 5px;
+    width: 70%;
+
+}
+.tournament-story-2{
+    /*margin: 16px 10px;*/
+    /*padding: 5px;*/
+    width: 30%;
+    background: #d2cbe8;
+}
+
+
+a{
+    color: #5340E2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.tour-activity{
+    background: #C1BDD5;
+    margin: 30px;
+    padding: 16px 5px;
+    border-radius: 16px;
+}
+
+.tour-activity:hover{
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.team-inf-reg-2{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.tournament-story-inf{
+    background: #C1BDD5;
+    margin: 16px 0;
+    padding: 16px 5px;
+    border-radius: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
