@@ -3,7 +3,7 @@
 <head>
     <link href="style/main_page.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
-    <title>Main page</title>
+    <title>Title</title>
 </head>
 <body>
     <div class="main">
@@ -13,8 +13,8 @@
             </div>
             <div class = "nav">
                 <ul>
-                    <li><a id = "turnirs" href = "#">Турніри \/</a></li>
-                    <li><a id = "log-in" href = "#">Увійти</a></li>
+                    <li><a href = "#">Турніри \/</a></li>
+                    <li><a id = "log-in" href = "#" onclick="openModal(); return false;">Увійти</a></li>
                     <li><a id = "cabinet" href = "#">Особистий кабінет</a></li>
                     <li><img src = "images/icon.png"></li>
                 </ul>
@@ -24,7 +24,7 @@
         <section class = "head-section">
             <h1>Організовуйте та беріть участь у захопливих турнірах!</h1>
             <p>змагайтеся, створюйте іноваційні проєкти, та піднімайтеся на вершину лідерів</p>
-            <button class = "lower-btn">Зареєструвати команду</button>
+            <button class = "lower-btn" onclick="openModal()">Увійти</button>
         </section>
 
     </div>
@@ -75,7 +75,7 @@
                 <li>Автор: User</li>
                 <li>Реєстрація: 30 березня - 10 квітня</li>
             </ul>
-            <button class = "card-btn">Детальніше</button>
+            <button id = "turnirs" class = "card-btn">Детальніше</button>
         </div>
         <div class = "card-big">
             <h3>Доєднуйтесь до наших турнірів вже сьогодні!</h3>
@@ -96,5 +96,28 @@
         </div>
     </main>
     <button class = "last-btn">більше</button>
+    <!-- Оверлей (backdrop) -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+    <!-- Модальне вікно -->
+    <div class="modal" id="loginModal">
+        <div class="modal-avatar">
+            <img src="images/icon.png">
+        </div>
+        <p class="modal-subtitle"><b>увійти</b> у Podium</p>
+
+        <label class="modal-label">Email</label>
+        <input class="modal-input" type="email" placeholder="Введіть email">
+
+        <label class="modal-label">Пароль</label>
+        <div class="modal-password-wrap">
+            <input class="modal-input" type="password" id="passwordInput" placeholder="Введіть пароль">
+            <button class="modal-eye" onclick="togglePassword()">👁️</button>
+        </div>
+
+        <button class="modal-submit">увійти</button>
+
+        <p class="modal-footer">Ще не з нами? <a href="#">Зареєструватись &gt;</a></p>
+    </div>
 </body>
 </html>
