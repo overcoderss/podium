@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style/administration_page.css" rel="stylesheet" type="text/css">
+    <title>Administration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class = "header">
+  <div class = "header-grid">
+    <div class = "logo"><span class = "img-logo"><img src = "images/Podium.png"></span><span class = "img-text">Podium</span></div>
+  </div>
+</header>
+<hr class = "line">
+<section class = "admin-turnircreate">
+  <div><svg width="42" height="46" viewBox="0 0 42 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.3009 1.25859C19.2211 -0.419535 22.0289 -0.419535 23.9491 1.25862L39.4178 14.7774C40.5795 15.7927 41.25 17.2875 41.25 18.8625V40.9734C41.25 43.2688 39.4545 45.1296 37.2396 45.1296H29.2188C27.0039 45.1296 25.2083 43.2688 25.2083 40.9734V29.0815C25.2083 28.7538 24.9519 28.4878 24.6354 28.4878H16.6146C16.2981 28.4878 16.0416 28.7538 16.0416 29.0815V40.9734C16.0416 43.2688 14.2461 45.1296 12.0312 45.1296H4.01042C1.79552 45.1296 0 43.2688 0 40.9734V18.8625C0 17.2875 0.670427 15.7927 1.83223 14.7774L17.3009 1.25859ZM21.733 3.98203C21.093 3.42265 20.157 3.42265 19.517 3.98203L4.04825 17.5008C3.66098 17.8392 3.4375 18.3375 3.4375 18.8625V40.9734C3.4375 41.3014 3.69401 41.5671 4.01042 41.5671H12.0312C12.3477 41.5671 12.6041 41.3014 12.6041 40.9734V29.0815C12.6041 26.7861 14.3997 24.9253 16.6146 24.9253H24.6354C26.8503 24.9253 28.6458 26.7861 28.6458 29.0815V40.9734C28.6458 41.3014 28.9023 41.5671 29.2188 41.5671H37.2396C37.5561 41.5671 37.8125 41.3014 37.8125 40.9734V18.8625C37.8125 18.3375 37.5891 17.8392 37.2018 17.5008L21.733 3.98203Z" fill="#434150"/>
+  </svg><a href = "#" class = "create">Адмін-панель</a></div>
+  <div><svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect width="43" height="43" fill="url(#pattern0_2082_108)"/>
+    <defs>
+      <pattern id="pattern0_2082_108" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_2082_108" transform="scale(0.00195312)"/>
+      </pattern>
+      <image id="image0_2082_108" width="512" height="512" preserveAspectRatio="none" xlink:href="images/turnir_create.png"/>
+    </defs>
+  </svg><a href = "#" class = "create-turnir create">Створення турніру</a></div>
+  <div><svg width="40" height="35" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.75 13.75C13.75 13.06 14.31 12.5 15 12.5H18.75C19.44 12.5 20 13.06 20 13.75C20 14.44 19.44 15 18.75 15H15C14.31 15 13.75 14.44 13.75 13.75ZM13.75 23.75C13.75 23.06 14.31 22.5 15 22.5H18.75C19.44 22.5 20 23.06 20 23.75C20 24.44 19.44 25 18.75 25H15C14.31 25 13.75 24.44 13.75 23.75ZM6.24753 17.5C5.92835 17.4994 5.60938 17.3769 5.36502 17.135L4.11502 15.885C3.62752 15.3975 3.62752 14.605 4.11502 14.1175C4.60252 13.63 5.39503 13.63 5.88253 14.1175L6.24753 14.4825L9.11252 11.6175C9.60003 11.13 10.3925 11.13 10.88 11.6175C11.3675 12.105 11.3675 12.8975 10.88 13.385L7.13002 17.135C6.88565 17.3794 6.5667 17.4994 6.24753 17.5ZM5.36502 27.135C5.60938 27.377 5.92835 27.4995 6.24753 27.5C6.5667 27.4995 6.88565 27.3795 7.13002 27.135L10.88 23.385C11.3675 22.8975 11.3675 22.105 10.88 21.6175C10.3925 21.13 9.60003 21.13 9.11252 21.6175L6.24753 24.4825L5.88253 24.1175C5.39503 23.63 4.60252 23.63 4.11502 24.1175C3.62752 24.605 3.62752 25.3975 4.11502 25.885L5.36502 27.135ZM5.2125 2.5C5.7275 1.0425 7.1175 0 8.75 0H16.25C17.8825 0 19.2725 1.0425 19.7875 2.5H21.25C23.32 2.5 25 4.18 25 6.25V31.25C25 33.32 23.32 35 21.25 35H3.75C1.68 35 0 33.32 0 31.25V6.25C0 4.18 1.68 2.5 3.75 2.5H5.2125ZM8.75 2.5C8.06 2.5 7.5 3.06 7.5 3.75C7.5 4.44 8.06 5 8.75 5H16.25C16.94 5 17.5 4.44 17.5 3.75C17.5 3.06 16.94 2.5 16.25 2.5H8.75ZM5.2125 5H3.75C3.06 5 2.5 5.56 2.5 6.25V31.25C2.5 31.94 3.06 32.5 3.75 32.5H21.25C21.94 32.5 22.5 31.94 22.5 31.25V6.25C22.5 5.56 21.94 5 21.25 5H19.7875C19.2725 6.4575 17.8825 7.5 16.25 7.5H8.75C7.1175 7.5 5.7275 6.4575 5.2125 5Z" fill="#434150"/>
+  </svg><a href = "#" class = "create">Розподіл роботи</a></div>
+  <div><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect width="40" height="40" fill="url(#pattern0_2215_180)"/>
+    <defs>
+      <pattern id="pattern0_2215_180" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_2215_180" transform="scale(0.00195312)"/>
+      </pattern>
+      <image id="image0_2215_180" width="512" height="512" preserveAspectRatio="none" xlink:href="images/results.png"/>
+    </defs>
+  </svg><a href = "#" class = "create">Результати</a></div>
+</section>
+  <div class = "main-content">
+    <section>
+      <div class = "title">
+        <div class = "hello-text"><h1>Адмін панель</h1>
+        <p>Огляд усіх турнірів та процесів на платформі</p></div>
+        <div class = "user-paramentrs"><img src = "images/boy%20icon.png">
+          <div>
+            <h3>Ім’я Прізвище (адміна)</h3>
+            <p>Адміністратор</p>
+            <button class = "create-turnir">+ створити турнір</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class = "profile-cards">
+    <div class = "profile-card">
+      <p>Всього турнірів</p>
+      <div class = "icon-number"><svg class = "img-card-green" width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="43" height="43" fill="url(#pattern0_2082_108)"/>
+        <defs>
+          <pattern id="pattern0_2082_108" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_2082_108" transform="scale(0.00195312)"/>
+          </pattern>
+          <image id="image0_2082_108" width="512" height="512" preserveAspectRatio="none" xlink:href="images/turnir_create.png"/>
+        </defs>
+      </svg><span>7</span></div>
+    </div>
+    <div class = "profile-card">
+      <p>Учасників</p>
+      <div class = "icon-number"><svg class = "img-card-grey" width="60" height="55" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="60" height="55" fill="url(#pattern0_2016_287)"/>
+        <defs>
+          <pattern id="pattern0_2016_287" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_2016_287" transform="matrix(0.00195312 0 0 0.00213068 0 -0.0454545)"/>
+          </pattern>
+          <image id="image0_2016_287" width="512" height="512" preserveAspectRatio="none" xlink:href="images/people.png"/>
+        </defs>
+      </svg><span>156</span></div>
+    </div>
+    <div class = "profile-card">
+      <p>Сабмітів</p>
+      <div class = "icon-number"><svg class = "img-card-yellow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="46" height="46" fill="url(#pattern0_2016_288)"/>
+        <defs>
+          <pattern id="pattern0_2016_288" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_2016_288" transform="scale(0.00195312)"/>
+          </pattern>
+          <image id="image0_2016_288" width="512" height="512" preserveAspectRatio="none" xlink:href="images/submits.png"/>
+        </defs>
+      </svg><span>42</span></div>
+    </div>
+    <div class = "profile-card">
+      <p>Оцінок</p>
+      <div class = "icon-number"><svg class = "img-card-pink" width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.7275 0L30.5649 17.6201L49.455 17.6201L34.1726 28.5099L40.01 46.1299L24.7275 35.2401L9.44512 46.1299L15.2825 28.5099L7.05719e-05 17.6201L18.8902 17.6201L24.7275 0Z" fill="#6D6E71"/>
+      </svg><span>128</span></div>
+    </div>
+  </section>
+  <article>
+    <span><h2>Список турнірів</h2><button>Усі статуси \/</button><search class = "search">
+                      <form action="/search" method="get">
+                          <input type="search" name="q" placeholder="Пошук турнірів...">
+                      </form>
+                  </search></span>
+    <hr class = "line">
+    <ul class="row">
+      <li>Назва турніру</li>
+      <li>Статус</li>
+      <li>Дати</li>
+      <li>Команди</li>
+      <li>Сабміти</li>
+      <li>Дії</li>
+    </ul>
+    <div class="turnir-parameters">
+      <div class="turnir-row">
+        <span class="t-name">TechChallenge 2026</span>
+        <span class="active">Running</span>
+        <span class="t-date">10 квіт. – 25 квіт. 2026</span>
+        <span>24</span>
+        <span>10</span>
+        <span><button class="btn-view">переглянути</button></span>
+      </div>
+      <div class="turnir-row">
+        <span class="t-name">AI Cup</span>
+        <span class="in-process">Registration</span>
+        <span class="t-date">20 квіт. – 15 трав. 2026</span>
+        <span>14</span>
+        <span>–</span>
+        <span><button class="btn-view">переглянути</button></span>
+      </div>
+      <div class="turnir-row">
+        <span class="t-name">Mobile Dev Challenge</span>
+        <span>Draft</span>
+        <span class="t-date">–</span>
+        <span>–</span>
+        <span>–</span>
+        <span><button class="btn-view">переглянути</button></span>
+      </div>
+      <div class="turnir-row">
+        <span class="t-name">Game Jam 2026</span>
+        <span>Finished</span>
+        <span class="t-date">1 квіт. – 15 квіт. 2026</span>
+        <span>30</span>
+        <span>27</span>
+        <span><button class="btn-view">переглянути</button></span>
+      </div>
+    </div>
+    <hr class = "line">
+    <div class = "lower">
+      <span class = "lower-span">Показано: <b>1-4</b> з <b>7</b> турнірів</span>
+      <div class = "lower-btn">
+        <button>&lt;</button>
+        <button>1</button>
+        <button class="pg-active">2</button>
+        <button>&gt;</button>
+      </div>
+    </div>
+  </article>
+  </div>
+
+
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-window" id="modalWindow">
+    <div class="modal-header">
+      <div class="modal-title-row">
+        <div class="modal-name-status">
+          <h2 class="modal-tournament-name" id="modalName">Tech Challenge</h2>
+          <span class="modal-status-badge active" id="modalStatus">Running</span>
+        </div>
+        <button class="modal-quick-btn">швидкі дії ▾</button>
+      </div>
+      <p class="modal-description">Турнір з веб розробки для студентських команд</p>
+      <div class="modal-meta">
+        <span class="modal-meta-item">📅 <span id="modalDate">10 квіт. – 25 квіт. 2026</span></span>
+        <span class="modal-meta-item">👥 <span id="modalTeams">24</span> команди</span>
+        <span class="modal-meta-item">📋 18 зданих робіт</span>
+        <span class="modal-meta-item">✅ 15 перевірених</span>
+      </div>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-left">
+        <div class="modal-section">
+          <h3>Загальна інформація</h3>
+          <div class="modal-info-row"><span>Назва турніру</span><input type="text" placeholder=""></div>
+          <div class="modal-info-row"><span>Короткий опис</span><input type="text" placeholder=""></div>
+          <div class="modal-info-row"><span>Організатор</span><input type="text" placeholder=""></div>
+          <div class="modal-info-row"><span>Gmail для контакту</span><input type="text" placeholder=""></div>
+        </div>
+
+        <div class="modal-stats-row">
+          <div class="modal-stat-card">
+            <h4>Команди</h4>
+            <div class="modal-stat-inner">
+              <div class="modal-circle green">24</div>
+              <div class="modal-legend">
+                <span class="dot green"></span> Зареєстровані<br>
+                <span class="dot grey"></span> Видалені
+              </div>
+            </div>
+          </div>
+          <div class="modal-stat-card">
+            <h4>Здані роботи</h4>
+            <div class="modal-stat-inner">
+              <div class="modal-circle yellow">18</div>
+              <div class="modal-legend">
+                <span class="dot green"></span> Отримано<br>
+                <span class="dot dark"></span> Не отримано<br>
+                <span class="dot yellow"></span> Чернетки
+              </div>
+            </div>
+          </div>
+          <div class="modal-stat-card">
+            <h4>Журі</h4>
+            <div class="modal-stat-inner">
+              <div class="modal-circle purple">12</div>
+              <div class="modal-legend">
+                <span class="dot purple"></span> Перевіряють<br>
+                <span class="dot dark"></span> Очікують<br>
+                <span class="dot red"></span> Неактивні
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Останні дії</h3>
+          <div class="modal-action-row"><span>Команда Team67 подала роботу на 1 раунд</span><span class="modal-action-date">22.04.2026, 18:33</span></div>
+          <div class="modal-action-row"><span>Додано нового члена журі: Оксана Коляденко</span><span class="modal-action-date">22.04.2026, 16:46</span></div>
+          <div class="modal-action-row"><span>Опубліковано оголошення: 'Нагадування про дедлайн'</span><span class="modal-action-date">22.04.2026, 16:45</span></div>
+        </div>
+      </div>
+
+      <div class="modal-right">
+        <div class="modal-section">
+          <h3>Статус турніру</h3>
+          <div class="modal-steps">
+            <div class="modal-step done">
+              <div class="step-circle">✓</div>
+              <span>створення</span>
+            </div>
+            <div class="modal-step-line done"></div>
+            <div class="modal-step done">
+              <div class="step-circle">✓</div>
+              <span>реєстрація</span>
+            </div>
+            <div class="modal-step-line"></div>
+            <div class="modal-step active-step">
+              <div class="step-circle current">3</div>
+              <span>проведення турніру</span>
+            </div>
+            <div class="modal-step-line"></div>
+            <div class="modal-step">
+              <div class="step-circle inactive">4</div>
+              <span>завершення</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Оголошення</h3>
+          <textarea class="modal-announce" placeholder="Введіть оголошення..."></textarea>
+          <button class="modal-publish-btn">опублікувати</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="createModalOverlay">
+  <div class="modal-window create-modal-window" id="createModalWindow">
+    <div class="modal-header">
+      <div class="modal-title-row">
+        <h2 class="modal-tournament-name">Створення турніру</h2>
+      </div>
+      <button class="modal-close" id="createModalClose">✕</button>
+    </div>
+
+    <div class="create-modal-body">
+
+      <div class="create-grid-2">
+        <div class="create-field">
+          <label>Назва турніру</label>
+          <input type="text" placeholder="">
+        </div>
+        <div class="create-field">
+          <label>Короткий опис</label>
+          <input type="text" placeholder="">
+        </div>
+      </div>
+
+      <div class="create-grid-2">
+        <div class="create-field">
+          <label>Повний опис. Правила</label>
+          <textarea rows="5" placeholder=""></textarea>
+        </div>
+        <div class="create-field">
+          <label>Дозволені технології</label>
+          <textarea rows="5" placeholder=""></textarea>
+        </div>
+      </div>
+
+      <div class="create-section-title">Дати та обмеження</div>
+
+      <div class="create-grid-2">
+        <div class="create-field">
+          <label>Початок реєстрації</label>
+          <div class="create-date-input">
+            <span>📅</span>
+            <input type="date" placeholder="обрати">
+          </div>
+        </div>
+        <div class="create-field">
+          <label>Кінець реєстрації</label>
+          <div class="create-date-input">
+            <span>📅</span>
+            <input type="date" placeholder="обрати">
+          </div>
+        </div>
+        <div class="create-field">
+          <label>Початок турніру</label>
+          <div class="create-date-input">
+            <span>📅</span>
+            <input type="date" placeholder="обрати">
+          </div>
+        </div>
+        <div class="create-field">
+          <label>Оголошення результатів</label>
+          <div class="create-date-input">
+            <span>📅</span>
+            <input type="date" placeholder="обрати">
+          </div>
+        </div>
+      </div>
+
+      <div class="create-grid-2">
+        <div class="create-field">
+          <label>Максимальна кількість команд <span class="optional">(необов'язково)</span></label>
+          <input type="number" placeholder="" min="1">
+        </div>
+        <div class="create-field">
+          <label>Вікові обмеження <span class="optional">(необов'язково)</span></label>
+          <input type="text" placeholder="">
+        </div>
+      </div>
+
+      <div class="create-section-title">Формат турніру</div>
+
+      <div class="create-grid-2">
+        <div class="create-field">
+          <label>Кількість раундів</label>
+          <input type="number" placeholder="" min="1">
+        </div>
+        <div class="create-field">
+          <label>Формат оцінювання</label>
+          <select class="create-select create-choose-btn">
+            <option value="">Яким робота оцінюється кількома журі</option>
+            <option>Один журі оцінює</option>
+            <option>Колегіальне оцінювання</option>
+          </select>
+        </div>
+        <div class="create-field">
+          <label>Критерії оцінювання</label>
+          <button class="create-choose-btn">обрати</button>
+          <span class="from-to">або</span>
+          <input type="text" placeholder="додати своє...">
+        </div>
+        <div class="create-field">
+          <label>Журі</label>
+          <button class="create-choose-btn">обрати</button>
+          <div class="create-checkbox-row">
+            <input type="checkbox" id="juryNotify">
+            <label for="juryNotify" class="create-checkbox-label">надіслати всім журі повідомлення</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="create-field">
+        <label>Кількість учасників:</label>
+        <div class="create-range-row">
+          <span class = "from-to">Від</span>
+          <input type="number" class="create-range-input" min="1" placeholder="0">
+          <span class = "from-to">до</span>
+          <input type="number" class="create-range-input" min="1" placeholder="0">
+        </div>
+      </div>
+
+      <div class="create-field">
+        <label>Завантажити файл з умовами завдання</label>
+        <button class="create-upload-btn">завантажити PDF</button>
+      </div>
+
+      <div class="create-toggle-row">
+        <label class="toggle-switch">
+          <input type="checkbox" checked>
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="create-toggle-label">Турнір буде публічним</span>
+      </div>
+
+      <div class="create-actions">
+        <button class="create-cancel-btn" id="createCancel">Скасувати</button>
+        <button class="create-submit-btn">Створити турнір</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal-overlay" id="resultsModalOverlay">
+    <div class="modal-window results-modal-window" id="resultsModalWindow">
+        <div class="modal-header">
+            <div class="modal-title-row">
+                <h2 class="modal-tournament-name">Оцінювання та результати</h2>
+            </div>
+            <button class="modal-close" id="resultsModalClose">✕</button>
+        </div>
+
+        <div class="results-modal-body">
+
+            <div class="results-choose-row">
+                <span class="results-choose-label">Обрати турнір:</span>
+                <span class="results-tournament-badge">TechChallenge</span>
+            </div>
+
+            <div class="results-stats-grid">
+                <div class="results-stat-card green-card">
+                    <div class="results-stat-icon green-icon">📈</div>
+                    <div class="results-stat-info">
+                        <div class="results-stat-title">Загальний прогрес</div>
+                        <div class="results-stat-big green-text">76%</div>
+                        <div class="results-progress-bar">
+                            <div class="results-progress-fill" style="width: 76%"></div>
+                        </div>
+                        <div class="results-stat-sub">18/24 робіт оцінено</div>
+                    </div>
+                </div>
+
+                <div class="results-stat-card purple-card">
+                    <div class="results-stat-icon purple-icon">👤</div>
+                    <div class="results-stat-info">
+                        <div class="results-stat-title">Журі завершили</div>
+                        <div class="results-stat-big">8/12</div>
+                        <div class="results-stat-sub">67% журі здали оцінки</div>
+                    </div>
+                </div>
+
+                <div class="results-stat-card orange-card">
+                    <div class="results-stat-icon orange-icon">⏱</div>
+                    <div class="results-stat-info">
+                        <div class="results-stat-title">Дедлайн оцінювання</div>
+                        <div class="results-stat-deadline">1 день 12 год. 48 хв.</div>
+                    </div>
+                </div>
+
+                <div class="results-stat-card notify-card">
+                    <button class="results-notify-btn">
+                        Відправити журі нагадування
+                        <span class="results-notify-icon">➤</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-sections-row">
+                <div class="results-section-block">
+                    <div class="results-section-title">Прогрес журі</div>
+                    <div class="results-section-content"></div>
+                </div>
+                <div class="results-section-block">
+                    <div class="results-section-title">Статус оцінювання</div>
+                    <div class="results-section-content"></div>
+                </div>
+            </div>
+
+            <div class="results-section-block results-full-block">
+                <div class="results-section-title">Таблиця лідерів</div>
+                <div class="results-section-content"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal-overlay" id="workModalOverlay">
+  <div class="modal-window work-modal-window" id="workModalWindow">
+    <div class="modal-header">
+      <div class="modal-title-row">
+        <h2 class="modal-tournament-name">Розподіл роботи між членами журі</h2>
+      </div>
+      <button class="modal-close" id="workModalClose">✕</button>
+    </div>
+
+    <div class="work-modal-body">
+
+      <div class="results-choose-row">
+        <span class="results-choose-label">Обрати турнір:</span>
+        <span class="results-tournament-badge">TechChallenge</span>
+      </div>
+
+      <div class="work-stats-row">
+        <div class="work-stat-item">
+          <span class="work-stat-icon">📋</span>
+          <div>
+            <div class="work-stat-label">Усього зданих робіт</div>
+            <div class="work-stat-value">18</div>
+          </div>
+        </div>
+        <div class="work-stat-divider"></div>
+        <div class="work-stat-item">
+          <span class="work-stat-icon">👤</span>
+          <div>
+            <div class="work-stat-label">Кількість журі</div>
+            <div class="work-stat-value">12 <span class="work-active-badge">активно</span></div>
+          </div>
+        </div>
+        <button class="work-random-btn">↗ Рандомно розподілити</button>
+      </div>
+
+      <div class="work-section">
+        <div class="work-section-title">Список поданих робіт</div>
+        <div class="work-table-header">
+          <span>Команда</span>
+          <span>Статус</span>
+          <span>Дата подання</span>
+        </div>
+        <div class="work-table-body">
+          <div class="work-table-row">
+            <span class="work-team-name">Team1</span>
+            <span class="work-status evaluated">оцінено</span>
+            <span class="work-date">22.04.2026, 16:30</span>
+          </div>
+          <div class="work-table-row">
+            <span class="work-team-name">LooongNameofTeam</span>
+            <span class="work-status reviewing">переглянуто</span>
+            <span class="work-date">22.04.2026, 16:30</span>
+          </div>
+          <div class="work-table-row">
+            <span class="work-team-name">Team6</span>
+            <span class="work-status evaluated">оцінено</span>
+            <span class="work-date">22.04.2026, 16:30</span>
+          </div>
+          <div class="work-table-row">
+            <span class="work-team-name">Team7</span>
+            <span class="work-status not-evaluated">неоцінено</span>
+            <span class="work-date">22.04.2026, 16:30</span>
+          </div>
+          <div class="work-table-row">
+            <span class="work-team-name">Wibecodeteam</span>
+            <span class="work-status evaluated">оцінено</span>
+            <span class="work-date">22.04.2026, 16:30</span>
+          </div>
+        </div>
+        <button class="work-show-more-btn">Показати ще ∨</button>
+      </div>
+
+      <div class="work-section">
+        <div class="work-section-title">Розподіл робіт</div>
+        <div class="work-table-header">
+          <span>Журі</span>
+          <span>К-сть робіт</span>
+          <span>Роботи</span>
+        </div>
+        <div class="work-table-body">
+          <div class="work-jury-row">
+            <div class="work-jury-info">
+              <div class="work-jury-avatar"></div>
+              <div>
+                <div class="work-jury-name">Ім'я та прізвище</div>
+                <div class="work-jury-email">email.ex@gmail.com</div>
+              </div>
+            </div>
+            <span class="work-jury-count">2</span>
+            <div class="work-jury-tags">
+              <span class="work-tag">назва роботи 1</span>
+              <span class="work-tag">назва роботи 2</span>
+            </div>
+          </div>
+          <div class="work-jury-row">
+            <div class="work-jury-info">
+              <div class="work-jury-avatar"></div>
+              <div>
+                <div class="work-jury-name">Ім'я та прізвище</div>
+                <div class="work-jury-email">email.ex@gmail.com</div>
+              </div>
+            </div>
+            <span class="work-jury-count">2</span>
+            <div class="work-jury-tags">
+              <span class="work-tag">назва роботи 1</span>
+              <span class="work-tag">назва роботи 2</span>
+            </div>
+          </div>
+          <div class="work-jury-row">
+            <div class="work-jury-info">
+              <div class="work-jury-avatar"></div>
+              <div>
+                <div class="work-jury-name">Ім'я та прізвище</div>
+                <div class="work-jury-email">email.ex@gmail.com</div>
+              </div>
+            </div>
+            <span class="work-jury-count">2</span>
+            <div class="work-jury-tags">
+              <span class="work-tag">назва роботи 1</span>
+              <span class="work-tag">назва роботи 2</span>
+            </div>
+          </div>
+          <div class="work-jury-row">
+            <div class="work-jury-info">
+              <div class="work-jury-avatar"></div>
+              <div>
+                <div class="work-jury-name">Ім'я та прізвище</div>
+                <div class="work-jury-email">email.ex@gmail.com</div>
+              </div>
+            </div>
+            <span class="work-jury-count">2</span>
+            <div class="work-jury-tags">
+              <span class="work-tag">назва роботи 1</span>
+              <span class="work-tag">назва роботи 2</span>
+            </div>
+          </div>
+        </div>
+        <button class="work-show-more-btn">Показати ще в журі ∨</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    /* ===== ВІКНО РОЗПОДІЛУ РОБОТИ ===== */
+
+    const workOverlay = document.getElementById('workModalOverlay');
+    const workClose   = document.getElementById('workModalClose');
+
+    document.querySelectorAll('.admin-turnircreate a').forEach(function (link) {
+      if (link.textContent.trim() === 'Розподіл роботи') {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          workOverlay.classList.add('active');
+        });
+      }
+    });
+
+    workClose.addEventListener('click', function () {
+      workOverlay.classList.remove('active');
+    });
+
+    workOverlay.addEventListener('click', function (e) {
+      if (e.target === workOverlay) workOverlay.classList.remove('active');
+    });
+
+
+    /* ===== ВІКНО РЕЗУЛЬТАТІВ ===== */
+
+    const resultsOverlay = document.getElementById('resultsModalOverlay');
+    const resultsClose   = document.getElementById('resultsModalClose');
+
+    document.querySelectorAll('.admin-turnircreate a').forEach(function (link) {
+      if (link.textContent.trim() === 'Результати') {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          resultsOverlay.classList.add('active');
+        });
+      }
+    });
+
+    resultsClose.addEventListener('click', function () {
+      resultsOverlay.classList.remove('active');
+    });
+
+    resultsOverlay.addEventListener('click', function (e) {
+      if (e.target === resultsOverlay) resultsOverlay.classList.remove('active');
+    });
+
+
+
+
+    /* ===== ВІКНО ПЕРЕГЛЯДУ ТУРНІРУ ===== */
+
+    const overlay    = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+
+    document.querySelectorAll('.turnir-row').forEach(function (row) {
+      row.style.cursor = 'pointer';
+
+      row.addEventListener('click', function () {
+        const name   = row.querySelector('.t-name')?.textContent || '';
+        const status = row.querySelector('.active, .in-process')?.textContent
+                || row.querySelectorAll('span')[1]?.textContent || '';
+        const date   = row.querySelector('.t-date')?.textContent || '–';
+        const teams  = row.querySelectorAll('span')[3]?.textContent || '–';
+
+        document.getElementById('modalName').textContent   = name;
+        document.getElementById('modalStatus').textContent = status;
+        document.getElementById('modalDate').textContent   = date;
+        document.getElementById('modalTeams').textContent  = teams;
+
+        const badge = document.querySelector('.modal-status-badge');
+        badge.className = 'modal-status-badge';
+        if (row.querySelector('.active'))          badge.classList.add('active');
+        else if (row.querySelector('.in-process')) badge.classList.add('in-process');
+
+        overlay.classList.add('active');
+      });
+    });
+
+    modalClose.addEventListener('click', function () {
+      overlay.classList.remove('active');
+    });
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) overlay.classList.remove('active');
+    });
+
+
+    /* ===== ВІКНО СТВОРЕННЯ ТУРНІРУ ===== */
+
+    const createOverlay = document.getElementById('createModalOverlay');
+    const createClose   = document.getElementById('createModalClose');
+    const createCancel  = document.getElementById('createCancel');
+
+    document.querySelectorAll('.create-turnir').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        createOverlay.classList.add('active');
+      });
+    });
+
+    createClose.addEventListener('click', function () {
+      createOverlay.classList.remove('active');
+    });
+
+    createCancel.addEventListener('click', function () {
+      createOverlay.classList.remove('active');
+    });
+
+    createOverlay.addEventListener('click', function (e) {
+      if (e.target === createOverlay) createOverlay.classList.remove('active');
+    });
+
+
+    /* ===== ЗАКРИТИ ВІКНО КЛАВІШЕЮ ESC ===== */
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        overlay.classList.remove('active');
+        createOverlay.classList.remove('active');
+        resultsOverlay.classList.remove('active');
+        workOverlay.classList.remove('active');
+      }
+    });
+
+  });
+</script>
+</body>
+</html>

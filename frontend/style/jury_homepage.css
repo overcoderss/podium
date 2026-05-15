@@ -1,0 +1,256 @@
+/* Базові налаштування з вашого коду */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #cccce6;
+    color: #434150;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: #cccce6;
+    border-bottom: 1px solid #434050;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.animated-text {
+    flex: 1;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.typing-demo {
+  width: 35ch;
+  animation: typing 3s steps(35), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  margin: 0 auto;
+}
+
+@keyframes typing { from { width: 0 } }
+@keyframes blink { 50% { border-color: transparent } }
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+main {
+    display: flex;
+}
+
+.sidebar {
+    width: 18%;
+    background-color: #A7A7C0;
+    margin: 12px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.sidebar-profile {
+    display: grid;
+    justify-items: start;
+    padding-left: 10px;
+    border-bottom: 1px solid #434050;
+    padding-bottom: 20px;
+}
+
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #D9D9D9;
+}
+
+.edit-btn {
+    background: #a9abc4;
+    border-radius: 15px;
+    padding: 20px 20px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:18px;
+    height:18px
+}
+
+.username { font-size: 14px}
+.Name_Surname { font-size: 24px; font-weight: bold}
+.status-prof { font-size: 24px; color: #614A00}
+.email, .phone { font-size: 14px}
+.avatar-container, .username, .Name_Surname, .status-prof, .email, .phone {
+    margin-bottom: 20px;
+}
+
+.sidebar-profile p, 
+.sidebar-profile div {
+  word-break: break-word;
+  overflow-wrap: anywhere; 
+}
+
+.main-content {
+    width: 82%;
+    background-color: #A7A7C0;
+    margin: 12px;
+    border-radius: 10px;
+    padding: 25px;
+    font-weight: bold;
+    color: #434150;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.status-pills {
+    display: flex;
+    gap: 10px;
+}
+
+.pill {
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pill-grey { background: #C1BDD5; }
+.pill-green { background: #7ECA7E; }
+.pill-red { background: #F17F82; color: white; }
+
+/* ТУРНІРНІ КАРТКИ (Завдання 1: Тінь) */
+.Wons-card {
+    background-color: #C1BDD5;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 10px 10px 25px 8px rgba(16, 2, 169, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.Wons-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.go-btn {
+    background: #a9abc4;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submission-date, .check-date, .tourney-label {
+    background: #D9D9D9;
+    padding: 15px 15px;
+    border-radius: 80px;
+    font-size: 15px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.status-badge-pending{
+    background: #F17F82;
+    padding: 15px 15px;
+    border-radius: 80px;
+    font-size: 15px;
+    width: fit-content;
+}
+
+
+.status-badge-done, .score-badge {
+    background: #7ECA7E;
+    padding: 15px 15px;
+    border-radius: 80px;
+    font-size: 15px;
+    width: fit-content;
+}
+
+.pending { background: #FF8E8E; color: #434150; }
+.done { background: #7ECA7E; }
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.content-section summary {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .app-container { flex-direction: column; }
+    .sidebar { width: 100%; border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); }
+    .page-title-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+}

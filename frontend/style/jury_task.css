@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    font-family: Roboto, sans-serif;
+    --body-bg: #CCCCE7;
+    --section-bg: #A7A7C0;
+    --text-main: #434050;
+}
+
+body {
+    background: var(--body-bg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 0 rgba(255,255,255,0.15) inset;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75px;
+}
+
+.logo-text {
+    font-size: 24px;
+    margin-left: 10px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li:nth-child(2) {
+    margin-left: 15px;
+}
+
+ul a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li a img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    margin: 130px auto 100px auto;
+    padding: 0 25px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team, .rate {
+    background: var(--section-bg);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.team-name, .main-rate-title {
+    font-size: 32px;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.team-github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    a {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+}
+
+.github-img {
+    width: 25px;
+}
+
+.github-link {
+    color: var(--text-main);
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.team-description span, .team-video span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.team-description p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin-bottom: 25px;
+}
+
+.video-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.rating-block {
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 25px;
+}
+
+.rating-block:last-of-type {
+    border-bottom: none;
+}
+
+.block-title {
+    font-size: 26px;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.block-category {
+    font-size: 20px;
+    color: var(--text-main);
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.criteria-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.criteria-info {
+    flex: 1;
+}
+
+.criteria-name {
+    font-size: 16px;
+    color: #4a4758;
+}
+
+.slider-container {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: var(--text-main);
+    border-radius: 2px;
+    outline: none;
+}
+
+.score-slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #E0E0F0;
+    border: 2px solid var(--text-main);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-value {
+    position: absolute;
+    top: -25px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-main);
+    height: 20px;
+    pointer-events: none;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.slider-labels span {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.extra-input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.extra-description-input {
+    flex: 1;
+    padding: 14px 25px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    color: var(--text-main);
+}
+
+.extra-description-input::placeholder {
+    color: rgba(67, 64, 80, 0.6);
+}
+
+.total-score-display {
+    margin: 30px 0;
+    font-size: 26px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.total-score-display strong {
+    font-weight: 900;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.save-draft-btn, .submit-rate-btn {
+    padding: 14px 30px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.save-draft-btn {
+    background: #B8B8D1;
+    color: var(--text-main);
+}
+
+.submit-rate-btn {
+    background: #9898B0;
+    color: var(--text-main);
+}
+
+.save-draft-btn:hover, .submit-rate-btn:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 100%;
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    ul a span {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    li a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .team, .rate {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .criteria-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .video-placeholder {
+        height: 250px;
+    }
+
+    .extra-input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .save-draft-btn, .submit-rate-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-rate-title, .team-name {
+        font-size: 24px;
+    }
+
+    .block-title {
+        font-size: 20px;
+    }
+}

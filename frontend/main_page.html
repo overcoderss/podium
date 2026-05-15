@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style/main_page.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="main">
+        <header class = "header">
+            <div class = "header-grid">
+                <div class = "logo"><span class = "img-logo"><img src = "images/Podium.png"></span><span class = "img-text">Podium</span></div>
+            </div>
+            <div class = "nav">
+                <ul>
+                    <li><a href = "#">Турніри \/</a></li>
+                    <li><a id = "log-in" href = "#" onclick="openModal(); return false;">Увійти</a></li>
+                    <li><a id = "cabinet" href = "#">Особистий кабінет</a></li>
+                    <li><img src = "images/icon.png"></li>
+                </ul>
+            </div>
+        </header>
+        <hr class = "line">
+        <section class = "head-section">
+            <h1>Організовуйте та беріть участь у захопливих турнірах!</h1>
+            <p>змагайтеся, створюйте іноваційні проєкти, та піднімайтеся на вершину лідерів</p>
+            <button class = "lower-btn" onclick="openModal()">Увійти</button>
+        </section>
+
+    </div>
+        <nav>
+            <div class = navigation>
+                <ul class = "nav-list">
+                    <li><button class = "turnir-btn">Активні</button></li>
+                    <li><button class = "turnir-btn">Майбутні</button></li>
+                    <li><button class = "turnir-btn">Завершені</button></li>
+                </ul>
+                <search class = "search">
+                    <form action="/search" method="get">
+                        <input type="search" name="q" placeholder="Пошук турнірів...">
+                    </form>
+                </search>
+            </div>
+            <hr class = "line line-nav">
+        </nav>
+    <main class = "cards-main">
+        <div class = "card">
+            <h2>Tech Challenge 2026</h2>
+            <p>реєстрація відкрита</p>
+            <hr class = "line-in-card">
+            <ul>
+                <li>Тема: програмування</li>
+                <li>Автор: User67</li>
+                <li>Реєстрація: 1 березня - 14 березня</li>
+            </ul>
+            <button class = "card-btn">Детальніше</button>
+        </div>
+        <div class = "card">
+            <h2>AI Cup</h2>
+            <p>реєстрація відкрита</p>
+            <hr class = "line-in-card">
+            <ul>
+                <li>Тема: ШІ</li>
+                <li>Автор: User52</li>
+                <li>Реєстрація: 17 березня - 21 березня</li>
+            </ul>
+            <button class = "card-btn">Детальніше</button>
+        </div>
+        <div class = "card">
+            <h2>WebProgramingCup</h2>
+            <p>реєстрація відкрита</p>
+            <hr class = "line-in-card">
+            <ul>
+                <li>Тема: вебдизайн</li>
+                <li>Автор: User</li>
+                <li>Реєстрація: 30 березня - 10 квітня</li>
+            </ul>
+            <button id = "turnirs" class = "card-btn">Детальніше</button>
+        </div>
+        <div class = "card-big">
+            <h3>Доєднуйтесь до наших турнірів вже сьогодні!</h3>
+            <div class = "big-card-icons">
+                <figure>
+                    <img src="images/image 2.png">
+                    <figcaption class="img-caption">реєстрація</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image 5.png">
+                    <figcaption class="img-caption">змагання</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/image 4.png">
+                    <figcaption class="img-caption">перемога</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <button class = "last-btn">більше</button>
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+
+    <div class="modal" id="loginModal">
+        <h2 class="modal-title">Ласкаво просимо до <b>Podium!</b></h2>
+        <p class="modal-desc">увійдіть у свій обліковий запис</p>
+
+        <div class="modal-inner">
+            <div class="modal-avatar">
+                <img src="images/icon.png">
+            </div>
+            <p class="modal-subtitle"><b>увійти</b> у Podium</p>
+
+            <label class="modal-label">Email</label>
+            <input class="modal-input" type="email" placeholder="Введіть email">
+
+            <label class="modal-label">Пароль</label>
+            <div class="modal-password-wrap">
+                <input class="modal-input" type="password" id="passwordInput" placeholder="Введіть пароль">
+                <button class="modal-eye" onclick="togglePassword()">👁️</button>
+            </div>
+
+            <button class="modal-submit">увійти</button>
+
+            <p class="modal-footer">Ще не з нами? <a href="#" onclick="switchToRegister(); return false;">Зареєструватись &gt;</a></p>
+        </div>
+    </div>
+    <div class="modal" id="registerModal">
+        <h2 class="modal-title">Вітаємо у <b>Podium!</b></h2>
+
+        <div class="modal-inner">
+            <div class="modal-row">
+                <div class="modal-col">
+                    <label class="modal-label">Введіть ім'я</label>
+                    <input class="modal-input" type="text" placeholder="Ваше ім'я">
+                </div>
+                <div class="modal-col">
+                    <label class="modal-label">Введіть прізвище</label>
+                    <input class="modal-input" type="text" placeholder="Ваше прізвище">
+                </div>
+            </div>
+
+            <label class="modal-label">Придумайте <b>nickname</b></label>
+            <input class="modal-input" type="text" placeholder="nickname має бути унікальним">
+
+            <div class="modal-row modal-age-gender">
+                <div class="modal-col">
+                    <label class="modal-label">Вік</label>
+                    <select class="modal-age-select">
+                        <option value="" disabled selected>обрати</option>
+                        <option>до 18</option>
+                        <option>18–24</option>
+                        <option>25–34</option>
+                        <option>35–44</option>
+                        <option>45+</option>
+                    </select>
+                </div>
+                <div class="modal-col">
+                    <label class="modal-label">Стать</label>
+                    <label class="modal-radio"><input type="radio" name="gender" value="male">Чоловіча</label>
+                    <label class="modal-radio"><input type="radio" name="gender" value="female">Жіноча</label>
+                    <label class="modal-radio"><input type="radio" name="gender" value="other">Інше</label>
+                </div>
+            </div>
+
+            <label class="modal-label">Електронна адреса</label>
+            <input class="modal-input" type="email" placeholder="Введіть email">
+
+            <label class="modal-label">Придумайте пароль</label>
+            <input class="modal-input" type="password" placeholder="Пароль має містити мінімум 8 символів">
+
+            <label class="modal-label">Повторіть пароль</label>
+            <input class="modal-input" type="password">
+
+            <div class="modal-register-footer">
+                <button class="modal-submit modal-submit-register">Зареєструватись</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openModal() {
+            document.getElementById('loginModal').classList.add('active');
+            document.getElementById('modalOverlay').classList.add('active');
+            document.getElementById('registerModal').classList.remove('active');
+        }
+
+        function closeModal() {
+            document.getElementById('loginModal').classList.remove('active');
+            document.getElementById('registerModal').classList.remove('active');
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+
+        function switchToRegister() {
+            document.getElementById('loginModal').classList.remove('active');
+            document.getElementById('registerModal').classList.add('active');
+        }
+
+        function togglePassword() {
+            const input = document.getElementById('passwordInput');
+            input.type = input.type === 'password' ? 'text' : 'password';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>

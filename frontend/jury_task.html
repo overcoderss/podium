@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка та оцінка завдання</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/jury_task.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Podium.png" alt="Podium logo" class="logo-img">
+            <span class="logo-text">Podium</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="images/profile.png" alt="Profile"><span>Особистий кабінет</span></a></li>
+                <li><a href="#"><img src="images/home.png" alt="Homepage"><span>Головна</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="team">
+            <span class="team-name">Назва команди</span>
+            <div class="team-github">
+                <a href="" class="github-link"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="Github icon" class="github-img"><span>Github команди</span></a>
+            </div>
+            <div class="team-description">
+                <span>Опис від команди (опціонально):</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos</p>
+            </div>
+            <div class="team-video">
+                <span>Відеопрезентація проєкту</span>
+                <div class="video"></div>
+            </div>
+        </section>
+        <section class="rate">
+            <h1 class="main-rate-title">Оцінювання проєкту</h1>
+            <div class="rating-block">
+                <h2 class="block-title">Блок I: Технічна частина</h2>
+                <h3 class="block-category">Backend</h3>
+                <div class="criteria-row" id="row-1">
+                    <div class="criteria-info"><span class="criteria-name">Чистота та якість коду (відсутність code-smells)</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-1"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-1">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+                <div class="criteria-row" id="row-2">
+                    <div class="criteria-info"><span class="criteria-name">Використання патернів</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-2"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-2">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+                <h3 class="block-category">Database</h3>
+                <div class="criteria-row" id="row-3">
+                    <div class="criteria-info"><span class="criteria-name">База даних та налаштування</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-3"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-3">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+                <h3 class="block-category">Frontend</h3>
+                <div class="criteria-row" id="row-4">
+                    <div class="criteria-info"><span class="criteria-name">Зручність та хороший досвід користувача (UX)</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-4"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-4">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-block">
+                <h2 class="block-title">Блок II: Функціональність</h2>
+                <div class="criteria-row" id="row-5">
+                    <div class="criteria-info"><span class="criteria-name">Зручність використання</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-5"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-5">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+                <div class="criteria-row" id="row-6">
+                    <div class="criteria-info"><span class="criteria-name">Роботоздатність</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-6"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-6">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-block">
+                <h2 class="block-title">Блок III: Загальні критерії</h2>
+                <div class="criteria-row" id="row-7">
+                    <div class="criteria-info"><span class="criteria-name">Правильне використання GIT</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-7"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-7">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+                <div class="criteria-row" id="row-8">
+                    <div class="criteria-info"><span class="criteria-name">Документація</span></div>
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-criteria-8"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="criteria-8">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-block">
+                <h2 class="block-title">Блок IV: Додаткові бали</h2>
+                <div class="extra-input-container">
+                    <input type="text" class="extra-description-input" placeholder="Опишіть, що ви хочете оцінити">
+                    <div class="slider-container">
+                        <span class="slider-value" id="val-extra-1"></span>
+                        <input type="range" min="1" max="10" value="1" class="score-slider" id="extra-1">
+                        <div class="slider-labels"><span>1</span><span>10</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-score-display">
+                <span>Загальний результат: <strong id="total-result">9</strong></span>
+            </div>
+
+            <div class="action-buttons">
+                <button class="save-draft-btn">Зберегти як чернетку</button>
+                <button class="submit-rate-btn">Завершити оцінювання</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/jury_task.js"></script>
+</body>
+</html>

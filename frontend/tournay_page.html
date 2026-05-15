@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link href="style/tournay_page.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <title>Tournay page</title>
+</head>
+<body>
+  <div class="main">
+    <header class = "header">
+      <div class = "header-grid">
+        <div class = "logo"><span class = "img-logo"><img src = "images/Podium.png"></span><span class = "img-text">Podium</span></div>
+      </div>
+      <div class = "nav">
+        <ul>
+          <li><a id="turnirs" href = "#">Турніри \/</a></li>
+          <li><a id ="log-in" href = "#">Увійти</a></li>
+          <li ><a id = "cabinet" href = "#">Особистий кабінет</a></li>
+          <li><img src = "images/icon.png"></li>
+        </ul>
+      </div>
+    </header>
+
+<!--    <hr class = "line">-->
+
+    <main class = "main">
+      <div class = "main-grid">
+        <section class="header-text">
+          <h1 id="challenge-title">Tech Challenge 2026</h1>
+          <p class="challenge-hero-status">Реєстрацію відкрито</p>
+        </section>
+        <section class="tournament-section">
+          <div class="tournament-grid">
+
+            <div class="timeline-card">
+
+              <div class="timeline">
+                <div class="step active">
+                  <img class="chek-list" src = "images/check-list.png">
+<!--                  <div class="icon">📝</div>-->
+                  <div class="content">
+                    <div class="title">Реєстрація</div>
+                    <div class="date">10.03.2026 – 16.03.2026</div>
+                  </div>
+                </div>
+
+<!--                <div class="line"></div>-->
+
+                <div class="step">
+                  <img class="flag" src = "images/flag.png">
+<!--                  <div class="icon">🚩</div>-->
+                  <div class="content">
+                    <div class="title">Раунд турніру</div>
+                    <div class="date">16.03.2026 – 22.03.2026</div>
+                  </div>
+                </div>
+
+<!--                <div class="line"></div>-->
+
+                <div class="step">
+                  <img class="star" src = "images/star.png">
+<!--                  <div class="icon">⭐</div>-->
+                  <div class="content">
+                    <div class="title">Оцінювання робіт</div>
+                    <div class="date">23.03.2026</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="action-card">
+              <button class="primary-btn" id="registration-team">Зареєструвати команду</button>
+              <div class="deadline">Залишилось 4 дні до кінця реєстрації</div>
+              <a href="#" id = "task" class= "secondary-btn">Умови завдання <span>PDF</span></a>
+            </aside>
+
+          </div>
+        </section>
+        <section class="tournament-stories">
+          <section class="tournament-story-1">
+            <section class="tournament-story-inf">
+              <h2>Опис турніру</h2>
+              <p><b>Tech Challenge</b> — це онлайн-турнір з розробки програмного забезпечення, у якому команди створюють веб-рішення за заданим технічним завданням у обмежений час. Учасники повинні реалізувати функціональний продукт, використовуючи сучасні технології фронтенду, бекенду та баз даних. Особлива увага приділяється якості коду, архітектурі, зручності інтерфейсу та відповідності вимогам завдання. Роботи оцінює журі за технічною реалізацією, функціональністю та загальною якістю продукту.
+                Більш детально можна ознайомитися з умовами завдання у файлі <a class="umova" id="umova">umova.pdf</a></p>
+            </section>
+            <section class="tournament-story-inf">
+              <h2>Дозволені технології</h2>
+              <p>Frontend: React, Vue.js, Angular, Svelte або інші сучасні JavaScript-фреймворки; також допускається використання чистого HTML, CSS та JavaScript.
+                Backend: Node.js (Express, NestJS), Python (Django, Flask, FastAPI), Java (Spring), PHP (Laravel) або інші серверні технології з підтримкою ООП.
+                База даних: MySQL, PostgreSQL, MongoDB, SQLite або інші реляційні чи NoSQL бази даних із обґрунтованою структурою.
+                Контроль версій: Git з публічним репозиторієм на GitHub або GitLab.
+                Деплой (опціонально):Vercel, Netlify, Render, Heroku, Railway, або інші платформи для демонстрації роботи проєкту</p>
+            </section>
+          </section>
+
+          <section class="tournament-story-2">
+            <section class="tour-activity team-inf-reg-1">
+              <h2>Зареєстровані команди</h2>
+              <p>Список зареєстрованих команд можна переглянути після завершення реєстрації</p>
+            </section>
+            <section class="tour-activity team-inf-reg-2">
+              <h2>Оголошення від  організаторів</h2>
+              <p></p>
+              <p>Поки що пусто</p>
+            </section>
+          </section>
+        </section>
+
+      </div>
+    </main>
+    <footer class = "footer">
+      <div class = "footer-grid">
+        Виникли питання? Пишіть на пошту <a class="email" id="org-email">organizatorhz@gmail.com</a>
+      </div>
+    </footer>
+
+  </div>
+</body>

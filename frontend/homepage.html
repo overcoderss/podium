@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style/homepage.css" rel="stylesheet" type="text/css">
+    <title>Homepage</title>
+</head>
+<body>
+
+    <header class = "header">
+        <div class = "header-grid">
+            <div class = "logo"><span class = "img-logo"><img src = "images/Podium.png"></span><span class = "img-text">Podium</span></div>
+        </div>
+        <button id="butt-log-out-tur" class="log-out" >Вийти</button>
+    </header>
+    <main>
+        <aside class = "sidebar">
+            <ul class = "sidebar-menu">
+                <li class = "menu-item menu-1"><img src = "images/Home.png"><a href = "#">Головна</a></li>
+                <li class = "menu-item menu-2"><img src = "images/Cup.png"><a href = "#">Турніри</a></li>
+                <li class = "menu-item menu-3"><img src = "images/People.png"><a href = "#">Команди</a></li>
+                <li class = "menu-item menu-4"><img src = "images/Profile.png"><a href = "#">Профіль</a></li>
+            </ul>
+        </aside>
+        <div class = "main-content">
+            <article class="content-1 r-content-1">
+                <section class = "initials con-1 content-one r-content-2 right-content">
+                    <div class="head_initials">
+                        <div class="head_initials-1">
+
+                            <div class="avatar-block">
+                                <img id="avatar" class="avatar" src="images/Avatar.png">
+                                <div id="username" class="username">@user_example</div>
+                            </div>
+
+                            <div class="profile-info">
+                                <div class="name-status-row">
+                                    <div id="Name_Surname" class="Name_Surname">Ім’я і Прізвище</div>
+                                    <div id="Status" class="status-prof">Учасник</div>
+                                </div>
+                                <div id="email" class="email">electronnaposhta.example@gmail.com</div>
+                                <div id="phone" class="phone">+380 67 667 6767</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="body_initials">
+                        <div class="body-initials-1">
+                            <div class="intial">Дата приєднання:<div id = "date" class="intial"> 25 квітня 2025</div></div>
+                            <div class="intial">Вік: <div id = "age" class="intial"> 15 років</div></div>
+                            <div class="intial">Стать: <div id = "sex" class="intial"> чоловіча</div></div>
+                        </div>
+                        <div class="body-initials-1">
+                            <div class="intial">Участь у конкурсах <div id = "part-conc" class="intial">5</div></div>
+                            <div class="intial">Команди: <div id = "teams" class="intial"> Team1, CoolTeam, ITmonsters.....</div></div>
+                        </div>
+                    </div>
+                    <button id = "update" class="update">Редагувати</button>
+                </section>
+                <section class = "wons con-1 right-content">
+                    <h1>Перемоги</h1>
+                    <section id = "Wons-card-1" class = "Wons-card">
+                        <h2 id="chall-name-1">Tech Challenge 2026</h2>
+                        <span class="wons-stroke"><p id="chall-date-1">25 березня 2026</p></span>
+                        <span class="wons-stroke">Тема:<p id="chall-topic-1">програмування</p></span>
+                        <span class="wons-stroke">Автор:<p id="chall-author1"> User67</p></span>
+                        <span class="wons-stroke">Реєстрація:</span>
+                        <span class="wons-stroke"><p id="chall-reg-1" class="wons-card-reg-dat"> 1 березня - 14 березня</p></span>
+                        <span class="wons-stroke-place"><img class="wons-image" src = "images/Wons.png"><p id="chall-place-1">3 МІСЦЕ</p></span>
+                    </section>
+                    <button id = "tur-list" class= "tur-list">Список всіх турнірів</button>
+                </section>
+            </article>
+
+            <article class="content-2 right-content">
+                <h1>Усі турніри</h1>
+                <section id = "Wons-card-2" class = "Wons-card">
+                    <h2 id="chall-name-2">Tech Challenge 2026</h2>
+                    <span class="wons-stroke"><p id="chall-date-2">25 березня 2026</p></span>
+                    <span class="wons-stroke">Тема:<p id="chall-topic-2">програмування</p></span>
+                    <span class="wons-stroke">Автор:<p id="chall-author2"> User67</p></span>
+                    <span class="wons-stroke">Реєстрація:</span>
+                    <span class="wons-stroke"><p id="chall-reg-2" class="wons-card-reg-dat"> 1 березня - 14 березня</p></span>
+                    <span class="wons-stroke-place"><img class="wons-image" src = "images/Wons.png"><p id="chall-place-2">3 МІСЦЕ</p></span>
+                    <span class="wons-stroke">Команда:<p id="chall-team-1">IT monsters</p></span>
+                </section>
+                <button id="butt-reg-tur">Зареєструватись на турнір</button>
+            </article>
+
+            <article class="content-3 right-content">
+                <h1>Ваші команди</h1>
+                <div id="team-card-1" class="team-card">
+                    <div class="top-team-card">
+                        <div>
+                            <h2 id="team-card-1-team-1">Team1</h2>
+                            <p class="status">Учасник</p>
+                        </div>
+                        <div>
+                            <p class="count-teammembr">Всього учасників:</p>
+                            <p id="team-card-1-count-1" class="count-teammembrs">4</p>
+                        </div>
+                        <button class="arrow-but"><i class="arrow up"></i></button>
+                    </div>
+                    <div class="bottom">
+                        <p class="lead">Лідер:</p>
+                        <p id="team-card-1-us-id-1" class="lead-user user">UserLeader</p>
+                        <p class="memb">Інші учасники:</p>
+                        <p id="team-card-1-us-id-2" class="user">User2</p>
+                        <p id="team-card-1-us-id-3" class="user">User3</p>
+                        <p id="team-card-1-us-id-4" class="user">User4</p>
+                    </div>
+                </div>
+                <button id="butt-add-tur">Додати команду</button>
+            </article>
+        </div>
+    </main>
+</body>
+<script src="scripts/homepage.js"></script>
+</html>

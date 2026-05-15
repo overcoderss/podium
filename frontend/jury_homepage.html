@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/jury_homepage.css" rel="stylesheet" type="text/css">
+    <title>Jury Homepage - Podium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-grid">
+            <div class="logo">
+                <span class="img-logo"><img src="images/Podium.png"></span>
+                <span class="img-text">Podium</span>
+            </div>
+        </div>
+        <div class="animated-text">
+                    <p class="typing-demo">Вами оцінено 12 робіт у 3 турнірах...</p>
+                </div>
+        <div class="header-right">
+            <img src="images/Home.png" class="home-icon" alt="Home">
+            <button id="butt-log-out-tur" class="log-out">Вийти</button>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar-profile">
+                <div class="avatar-container">
+                    <img id="avatar" class="avatar" src="images/Avatar.png">
+                    <button class="edit-btn"><img src="images/edit_icon.png"></button>
+                </div>
+                <div class="username">@user_example</div>
+                <div class="Name_Surname">Ім’я і Прізвище</div>
+                <div class="status-prof">Журі</div>
+                <p class="email">electronnaposhta.example@gmail.com</p>
+                <p class="phone">+380 67 667 6767</p>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <div class="dashboard-header">
+                <h1>Список призначених робіт</h1>
+                <div class="status-pills">
+                    <div class="pill pill-grey">Всього проєктів: 5</div>
+                    <div class="pill pill-green">Оцінено: 3</div>
+                    <div class="pill pill-red">Дедлайн: 02д : 14г : 30хв</div>
+                </div>
+            </div>
+
+            <details open class="content-section">
+                <summary><h2>Очікують на перевірку (3 робіт)</h2></summary>
+                <div class="cards-grid">
+                    <section class="Wons-card jury-card">
+                        <div class="card-top">
+                            <h2 class="chall-name">Назва команди</h2>
+                            <button class="go-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="tourney-label">Назва турніру</div>
+                        <p class="submission-date">Подано: 02.05, 14:00</p>
+                        <span class="status-badge-pending">Pending</span>
+                    </section>
+                    
+                    <section class="Wons-card jury-card">...</section>
+                    <section class="Wons-card jury-card">...</section>
+                </div>
+            </details>
+
+            <details open class="content-section">
+                <summary><h2>Перевірено</h2></summary>
+                <div class="cards-grid">
+                    <section class="Wons-card jury-card completed">
+                        <div class="card-top">
+                            <h2 class="chall-name">Назва команди</h2>
+                            <button class="go-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="tourney-label">Назва турніру</div>
+                        <p class="submission-date">Подано: 02.05, 14:00</p>
+                        <p class="check-date">Перевірено: 03.05, 18:00</p>
+                        <div class="card-bottom">
+                            <span class="status-badge-done">Completed</span>
+                            <span class="score-badge">85/100</span>
+                            <button class="edit-btn"><img src="images/edit_icon.png"></button>
+                        </div>
+                    </section>
+                </div>
+            </details>
+        </div>
+    </main>
+
+</body>
+</html>
